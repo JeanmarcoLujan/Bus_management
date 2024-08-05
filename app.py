@@ -4,6 +4,7 @@ from pymongo import MongoClient
 import pandas as pd
 import dotenv
 
+
 dotenv.load_dotenv()
 
 # Conectar a la base de datos MongoDB
