@@ -1,0 +1,5 @@
+[browser.gatherUsageStats]
+enabled = false
+
+[server]
+enableCORS = false
