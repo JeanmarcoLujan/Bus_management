@@ -7,6 +7,21 @@ import dotenv
 
 dotenv.load_dotenv()
 
+import streamlit as st
+
+st.set_page_config(
+    page_title="Buus",
+    page_icon="🚌",
+    initial_sidebar_state="expanded",
+    layout="wide",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': None,
+    }
+)
+
+
 # Conectar a la base de datos MongoDB
 client = MongoClient(os.environ['MI_MONGODB'])
 db = client["bus_management"]
