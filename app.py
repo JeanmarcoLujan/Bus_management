@@ -21,6 +21,16 @@ st.set_page_config(
     }
 )
 
+# Ocultar el header predeterminado
+hide_header_style = """
+    <style>
+    header {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_header_style, unsafe_allow_html=True)
+
+
+
 
 # Conectar a la base de datos MongoDB
 client = MongoClient(os.environ['MI_MONGODB'])
